@@ -1,0 +1,20 @@
+[
+  {
+    "artist": "Daft Punk",
+    "album": "Discovery",
+    "thumbnail": "https://placehold.co/400x400?text=Discovery",
+    "tracks": [
+      { "title": "One More Time", "length": "5:20", "url": "https://open.spotify.com/track/0DiDSt8vBJagzS1rgqYfU6" },
+      { "title": "Aerodynamic", "length": "3:27", "url": "https://open.spotify.com/track/3H39vS79p9vU9vEXp669Tz" }
+    ]
+  },
+  {
+    "artist": "Arctic Monkeys",
+    "album": "AM",
+    "thumbnail": "https://placehold.co/400x400?text=AM",
+    "tracks": [
+      { "title": "Do I Wanna Know?", "length": "4:32", "url": "https://open.spotify.com/track/5FVd6McODS9P3M71uEq64M" },
+      { "title": "R U Mine?", "length": "3:20", "url": "https://open.spotify.com/track/2ecpY96uU0vPhhXunvD53G" }
+    ]
+  }
+]

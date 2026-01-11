@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Music Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-white">
+
+<div class="container my-5">
+    <h1 class="text-center mb-4">My Music Library</h1>
+    
+    <div class="row mb-3 justify-content-center">
+        <div class="col-md-6 text-center">
+            <div class="btn-group" role="group">
+                <button onclick="sortAlbums('artist')" class="btn btn-sm btn-outline-info">Sort by Artist</button>
+                <button onclick="sortAlbums('album')" class="btn btn-sm btn-outline-info">Sort by Album</button>
+                <button onclick="sortAlbums('tracks')" class="btn btn-sm btn-outline-info">Most Tracks</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-4 justify-content-center">
+        <div class="col-md-6">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search by artist or album...">
+        </div>
+    </div>
+
+    <div id="albumGrid" class="row g-4">
+        </div>
+</div>
+
+<div class="modal fade" id="tracklistModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark text-white border-secondary">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title" id="modalTitle"></h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div id="modalStats" class="px-3 pt-3 small text-info"></div>
+            <div class="modal-body">
+                <ol id="trackList" class="list-group list-group-flush list-group-numbered"></ol>
+            </div>
+            <div class="modal-footer border-secondary">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Tracklist</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
